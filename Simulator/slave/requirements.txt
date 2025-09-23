@@ -1,0 +1,5 @@
+# Modbus library (legacy 2.x series)
+pymodbus<3
+
+# Serial communication for RTU or raw serial echo
+pyserial
