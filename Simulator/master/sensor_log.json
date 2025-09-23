@@ -1,0 +1,560 @@
+[
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 220
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 14
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 3080
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 3080
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:50",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 222
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 15
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 3330
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 3330
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 4
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.001
+    },
+    {
+        "timestamp": "2025-09-24 00:54:51",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 221
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 13
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2873
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2873
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0018
+    },
+    {
+        "timestamp": "2025-09-24 00:54:52",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 223
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 10
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2230
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2230
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0024
+    },
+    {
+        "timestamp": "2025-09-24 00:54:53",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 224
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 10
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2240
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2240
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 3
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0031
+    },
+    {
+        "timestamp": "2025-09-24 00:54:54",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 219
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 13
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2847
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2847
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0039
+    },
+    {
+        "timestamp": "2025-09-24 00:54:55",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 215
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 15
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 3225
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 3225
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0048
+    },
+    {
+        "timestamp": "2025-09-24 00:54:56",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 224
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 12
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2688
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2688
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 1
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0056
+    },
+    {
+        "timestamp": "2025-09-24 00:54:57",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:32.7.0",
+        "sensor": "Inverter",
+        "metric": "Voltage",
+        "value": 223
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:31.7.0",
+        "sensor": "Inverter",
+        "metric": "Current",
+        "value": 11
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:21.7.0",
+        "sensor": "Inverter",
+        "metric": "ActivePower",
+        "value": 2453
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:22.7.0",
+        "sensor": "Inverter",
+        "metric": "ApparentPower",
+        "value": 2453
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:23.7.0",
+        "sensor": "Inverter",
+        "metric": "ReactivePower",
+        "value": 0.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:25.7.0",
+        "sensor": "Inverter",
+        "metric": "PowerFactor",
+        "value": 1.0
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "0-0:96.7.9",
+        "sensor": "Inverter",
+        "metric": "Status",
+        "value": 2
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:1.8.0",
+        "sensor": "Inverter",
+        "metric": "Energy",
+        "value": 0.0064
+    },
+    {
+        "timestamp": "2025-09-24 00:54:58",
+        "obis_code": "1-0:99.99.1",
+        "sensor": "LDR",
+        "value": "Bright"
+    }
+]
