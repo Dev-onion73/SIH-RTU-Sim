@@ -1,41 +1,23 @@
-import time
-from pymodbus.server.sync import StartSerialServer
 from pymodbus.datastore import ModbusSlaveContext, ModbusServerContext, ModbusSequentialDataBlock
-from pymodbus.device import ModbusDeviceIdentification
-import threading
+from pymodbus.server.sync import StartSerialServer
 
-# Initial inverter registers: V, A, W, Status
-hr_values = [230, 12, 2760, 1]
+SLAVE_ID = 1  # Must match master
 
 store = ModbusSlaveContext(
-    hr=ModbusSequentialDataBlock(0, hr_values.copy()),
+    di=ModbusSequentialDataBlock(0, [0]*100),
+    co=ModbusSequentialDataBlock(0, [0]*100),
+    hr=ModbusSequentialDataBlock(0, [11,22,33,44,55]),
     ir=ModbusSequentialDataBlock(0, [0]*100)
 )
-context = ModbusServerContext(slaves=store, single=True)
 
-identity = ModbusDeviceIdentification()
-identity.VendorName = 'MVP-InverterSim'
-identity.ProductName = 'Virtual-Modbus-Inverter'
+context = ModbusServerContext(slaves={SLAVE_ID: store}, single=False)
 
-# Background thread to update registers
-def update_registers():
-    while True:
-        hr_values[2] += 10
-        if hr_values[2] > 5000:
-            hr_values[2] = 1000
-        context[0x00].setValues(3, 0, hr_values)  # 3 = holding registers
-        time.sleep(1)
-
-if __name__ == "__main__":
-    print("Starting virtual Modbus RTU Slave on /tmp/ttyACM0...")
-    threading.Thread(target=update_registers, daemon=True).start()
-    StartSerialServer(
-        context,
-        identity=identity,
-        port='/tmp/ttyACM0',
-        baudrate=9600,
-        stopbits=1,
-        bytesize=8,
-        parity='N',
-        timeout=5
-    )
+print(f"Starting Modbus RTU slave with ID {SLAVE_ID} on /dev/ttyACM0 ...")
+StartSerialServer(
+    context=context,
+    port="/dev/ttyACM0",
+    baudrate=9600,
+    stopbits=1,
+    bytesize=8,
+    parity='N'
+)
