@@ -1,0 +1,5 @@
+pymodbus==2.5.3
+pyModbusTCP==0.3.0
+pyserial==3.5
+RPi.GPIO==0.7.1
+six==1.17.0

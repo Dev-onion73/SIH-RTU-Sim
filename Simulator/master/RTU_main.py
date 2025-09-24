@@ -2,6 +2,7 @@ import json
 # import meshtastic.serial_interface
 from modbus_master import connect_modbus, read_inverter_metrics
 # In future: from sensor_x import read_sensor_data
+from sensor_modules import BH1750, DS18B20, ACS712
 import time
 
 def send_cosem_objects(iface, cosem_data):
