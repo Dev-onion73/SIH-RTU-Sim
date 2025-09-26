@@ -35,7 +35,7 @@ def main(poll_interval=1):
     # List of data source functions
     # Each function returns either a dict or a list of COSEM objects
     data_sources = [
-        lambda: read_inverter_metrics(modbus_client) if modbus_client else None,
+        lambda: read_slave_metrics(modbus_client) if modbus_client else None,
         # read_ldr,
         # read_ct,
         # Add more sensor functions here

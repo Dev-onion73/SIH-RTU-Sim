@@ -1,0 +1,15 @@
+1 3.3v = VCC                LUX, Temp
+3 GPIO 2 i2c = SDA          LUX
+5 GPIO 3 i2c = SCL          LUX
+7 GPIO 4 1-wire = GPCLK0    TEMP
+6 GND                       LUX,TEMP
+
+
+white = 3.3v
+black = GND
+grey = 5 V
+brown = 1 - wire
+blue = SDA
+orange/peach = SCL
+
+
