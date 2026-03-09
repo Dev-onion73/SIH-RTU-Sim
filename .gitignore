@@ -1,1 +1,6 @@
 .venv
+RTU-MODEL/.~lock.sample_inference_scores.csv#
+RTU-MODEL/setup_and_run.sh
+RTU-MODEL/yolo_pipeline.ipynb
+RTU-MODEL/yolo.ipynb
+RTU-MODEL/yolo_pipeline.py

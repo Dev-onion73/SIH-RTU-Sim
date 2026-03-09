@@ -1,0 +1,26 @@
+
+╔══════════════════════════════════════════════════════╗
+║     LicheeRV Nano (SG2002) Simulation Report        ║
+╠══════════════════════════════════════════════════════╣
+║  MODEL                                               ║
+║    ONNX INT8 size:           3.20 MB             ║
+║    Fits in 200MB:             YES                 ║
+╠══════════════════════════════════════════════════════╣
+║  CPU BENCHMARK                                       ║
+║    Mean latency:             35.8 ms             ║
+║    Median latency:           35.6 ms             ║
+║    P95 latency:              36.7 ms             ║
+╠══════════════════════════════════════════════════════╣
+║  NPU ESTIMATE (1 TOPS, 15x CPU speedup)              ║
+║    Estimated NPU:             2.4 ms             ║
+║    Target:                   2000 ms             ║
+║    Meets target:              YES                 ║
+╠══════════════════════════════════════════════════════╣
+║  MEMORY                                              ║
+║    Total used:               48.7 MB             ║
+║    Remaining:               151.3 MB             ║
+║    Memory safe:               YES                 ║
+╠══════════════════════════════════════════════════════╣
+║  VERDICT:                      VIABLE FOR DEPLOYMENT  ║
+╚══════════════════════════════════════════════════════╝
+    
