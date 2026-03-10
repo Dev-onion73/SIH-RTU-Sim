@@ -14,10 +14,11 @@ RTU-MODEL/
 │   │   ├── logreg_risk_model.joblib  # LOG-REG MODEL FILE
 │   │   ├── model_config.json
 │   │   ├── roc_pr_curves.png
-│   │   └── sample_inference_scores.csv
+│   │   
 │   └── YOLO
 │       ├── benchmark_report.txt       # MODEL BENCHMARKS FOR RUNNING ON LICHEERV NPU DEV BOARD
-│       └── yolov8n.pt                 # YOLO MODEL FILES
+│       ├── yolov8n.pt                 # YOLO MODEL FILES
+|       └── sample_inference_scores.csv
 ├── Notebooks and Scripts
 │   ├── anomaly_injection.py        #ATTEMPT TO INJECT IMAGE ANOMALIES SYNTHETICALLY ALONGSIDE WITH OTHER TELERMETRY
 │   ├── logreg_leak_free-1.ipynb 
