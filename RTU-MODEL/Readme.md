@@ -151,7 +151,7 @@ For more performance plots, open the directory images directly in your browser o
 
 ---
 
-## Contact & Contributions
+## REPO
 
-- Repo: https://github.com/Dev-onion73/SIH-RTU-Sim/RTU-MODEL
+- https://github.com/Dev-onion73/SIH-RTU-Sim/RTU-MODEL
 
