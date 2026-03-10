@@ -27,17 +27,7 @@ RTU-MODEL/
 ├── training_dataset(imputed with synthetic img inferences).csv #DATASET FOR LOG-REG MODEL USUALLY SENT FROM RTU
 ```
 
-### Embedded Images/Screenshots
 
-Below are some example images present in the directory (replace these with actual files for your case):
-
-![YOLO ConfMatrix](model_output/YOLO/confusion_matrix.png)
-*YOLOv8n confusion matrix (example)*
-
-![ROC-AUC curve for logistic regression](model_output/LOG_REG/roc_curve.png)
-*ROC-AUC curve for site-level logistic regression (example)*
-
----
 
 ## Key Components
 
@@ -107,21 +97,8 @@ Submitted by:
 
 ---
 
-## Performance and System Suitability
 
-- **YOLOv8n on LicheeRV (Linux SBC):**
-    - <3.5 ms NPU inference
-    - Fits in memory comfortably
-    - No TinyML pipeline needed: full Python/ONNX support via Linux
-
-- **Logistic Regression on Fog Node:**
-    - Excellent discrimination (ROC-AUC >0.96)
-    - Robust to site/operator variation (cross-plant validation)
-    - Fully interpretable, recalibratable as new features/image scores arrive
-
----
-
-## Frequently Asked Assignment/Design Questions
+## Design Questions
 
 **Q: Why not TinyML?**  
 *A: LicheeRV is a Linux SBC; YOLO runs in standard ONNX/Ultralytics Python. No resource constraints or firmware deployment; TinyML is only needed for microcontroller/MCU-class hardware.*
