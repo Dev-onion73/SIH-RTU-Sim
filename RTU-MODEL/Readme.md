@@ -138,31 +138,6 @@ Submitted by:
 
 ---
 
-## Outstanding/Remainder Documentation Questions
-
-- **Integrate real YOLO on-device scores into main dataset.**  
-  (Update logistic regression pipeline and reporting to use real, not synthetic, image features.)
-
-- **Add per-class precision/recall tables and confusion matrices for YOLO.**
-
-- **Field validation:**  
-  As more real-world data is gathered, further validate thresholds/config.
-
-- **Owner/Admin dashboard wiring:**  
-  Add references for integration into the larger system if needed.
-
----
-
-## Full Pipeline Reference
-
-For in-depth details, see workflows and experiment results in [Notebooks and Scripts/](./Notebooks%20and%20Scripts/).
-
-All model artifacts and configuration files are in [model_output/](./model_output/).
-
-For more performance plots, open the directory images directly in your browser or markdown viewer.
-
----
-
 ## REPO
 
 - https://github.com/Dev-onion73/SIH-RTU-Sim/RTU-MODEL
