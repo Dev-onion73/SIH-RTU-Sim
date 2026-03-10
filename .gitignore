@@ -5,3 +5,4 @@ RTU-MODEL/yolo_pipeline.ipynb
 RTU-MODEL/yolo.ipynb
 RTU-MODEL/yolo_pipeline.py
 RTU-MODEL/.runs
+RTU-MODEL/model_output/YOLO/.yolo26n.pt

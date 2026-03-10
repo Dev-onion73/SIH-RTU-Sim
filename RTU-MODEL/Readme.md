@@ -8,24 +8,23 @@ This directory implements core edge/fog algorithms for solar PV anomaly detectio
 
 ```
 RTU-MODEL/
-│
-├── Notebooks and Scripts/
-│     ├── yolo_pipeline_fixed.ipynb       # Full YOLOv8n train/export/benchmark workflow
-│     └── logreg_leak_free-1.ipynb        # Leak-free logistic regression pipeline for fog risk scoring
-│
-├── model_output/
-│     ├── LOG_REG/
-│     │     └── model_config.json         # Logistic regression model performance/metadata
-│     └── YOLO/
-│           └── benchmark_report.txt      # YOLOv8n deployment + hardware benchmark results
-│
-├── runs/                                 # Experiment run outputs (YOLO, etc.)
-│
-├── training_dataset(imputed with synthetic img inferences).csv # Merged dataset: telemetry + (imputed) image features
-│
-├── requirements.txt                      # Python dependency list
-│
-└── Readme.md                             # THIS ReadMe
+├── model_output
+│   ├── LOG_REG
+│   │   ├── feature_importance.png
+│   │   ├── logreg_risk_model.joblib  # LOG-REG MODEL FILE
+│   │   ├── model_config.json
+│   │   ├── roc_pr_curves.png
+│   │   └── sample_inference_scores.csv
+│   └── YOLO
+│       ├── benchmark_report.txt       # MODEL BENCHMARKS FOR RUNNING ON LICHEERV NPU DEV BOARD
+│       └── yolov8n.pt                 # YOLO MODEL FILES
+├── Notebooks and Scripts
+│   ├── anomaly_injection.py        #ATTEMPT TO INJECT IMAGE ANOMALIES SYNTHETICALLY ALONGSIDE WITH OTHER TELERMETRY
+│   ├── logreg_leak_free-1.ipynb 
+│   └── yolo_pipeline_fixed.ipynb
+├── Readme.md
+├── requirements.txt
+├── training_dataset(imputed with synthetic img inferences).csv #DATASET FOR LOG-REG MODEL USUALLY SENT FROM RTU
 ```
 
 ### Embedded Images/Screenshots
