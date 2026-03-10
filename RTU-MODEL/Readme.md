@@ -94,7 +94,7 @@ Below are some example images present in the directory (replace these with actua
 - Full dataset for model development: **telemetry** (sensor) + current **image scores**
 - Ready for re-training as real YOLO on-device results are available
 
-### 5. [YOLO Training dataset from IEEE Dataport] (https://ieee-dataport.org/documents/solar-panel-anomaly-detection-dataset-based-solar-insecticidal-lamp-internet-things)
+### 5. [YOLO Training dataset from IEEE Dataport](https://ieee-dataport.org/documents/solar-panel-anomaly-detection-dataset-based-solar-insecticidal-lamp-internet-things)
 
 
 Citation Author(s):
