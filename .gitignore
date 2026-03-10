@@ -4,4 +4,4 @@ RTU-MODEL/setup_and_run.sh
 RTU-MODEL/yolo_pipeline.ipynb
 RTU-MODEL/yolo.ipynb
 RTU-MODEL/yolo_pipeline.py
-RTU-MODEL/runs
+RTU-MODEL/.runs
