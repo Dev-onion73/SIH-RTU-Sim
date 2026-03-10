@@ -117,5 +117,5 @@ Submitted by:
 
 ## REPO
 
-- https://github.com/Dev-onion73/SIH-RTU-Sim/RTU-MODEL
+- [https://github.com/Dev-onion73/SIH-RTU-Sim/RTU-MODEL](https://github.com/Dev-onion73/SIH-RTU-Sim/tree/main/RTU-MODEL)
 
