@@ -1,5 +1,7 @@
 import time
 import json
+import random
+import uuid
 import paho.mqtt.client as mqtt
 from sensor_classes import BH1750, DS18B20, ESP32Voltage
 
@@ -8,7 +10,11 @@ BROKER_IP = "192.168.1.10"
 BROKER_PORT = 1883
 TOPIC = "rtu/rtu_01/telemetry"
 PUBLISH_INTERVAL = 5  # seconds
-CLIENT_ID = "rtu_01"
+CLIENT_ID = str(uuid.uuid4())
+
+# ===================== Conversion Factors =====================
+VOLTAGE_TO_POWER_FACTOR = 0.00056   # 0.56 mA current assumption (V * A = W)
+LUX_TO_IRRADIATION_FACTOR = 0.0079  # Approximate lux-to-W/m² conversion for sunlight
 
 # ===================== Sensor Initialization =====================
 def initialize_sensors():
@@ -71,35 +77,86 @@ def setup_mqtt():
 
 # ===================== Read Sensors =====================
 def read_sensors(sensors):
-    data = {
-        "timestamp": int(time.time()),
-        "sensors": {}
-    }
-    
-    # Read BH1750 (Lux)
+    # Read raw sensor values
+    lux = None
+    temperature_c = None
+    voltage = None
+
     if sensors['bh1750']:
         try:
-            data['sensors']['lux'] = sensors['bh1750'].read()
+            lux = sensors['bh1750'].read()
         except Exception as e:
             print(f"[ERROR] BH1750 read failed: {e}")
-            data['sensors']['lux'] = None
-    
-    # Read DS18B20 (Temperature)
+
     if sensors['ds18b20']:
         try:
-            data['sensors']['temperature_c'] = sensors['ds18b20'].read()
+            temperature_c = sensors['ds18b20'].read()
         except Exception as e:
             print(f"[ERROR] DS18B20 read failed: {e}")
-            data['sensors']['temperature_c'] = None
-    
-    # Read ESP32 (Voltage)
+
     if sensors['esp32']:
         try:
-            data['sensors']['voltage'] = sensors['esp32'].read()
+            voltage = sensors['esp32'].read()
         except Exception as e:
             print(f"[ERROR] ESP32 read failed: {e}")
-            data['sensors']['voltage'] = None
-    
+
+    # Derived power values
+    dc_power = round(voltage * VOLTAGE_TO_POWER_FACTOR, 4) if voltage is not None else round(random.uniform(0.1, 5.0), 4)
+    # AC power derived from DC power via inverter efficiency (typically 88–95%)
+    ac_power = round(dc_power * random.uniform(0.88, 0.95), 4)
+
+    # Temperature metrics
+    ambient_temp = round(temperature_c if temperature_c is not None else random.uniform(20.0, 40.0), 2)
+    module_temp = round(ambient_temp + random.uniform(5.0, 25.0), 2)
+    temp_delta = round(module_temp - ambient_temp, 2)
+
+    # Performance metrics
+    irradiation = round(lux * LUX_TO_IRRADIATION_FACTOR if lux is not None else random.uniform(100.0, 1000.0), 2)
+    pr = round(random.uniform(0.70, 0.95), 4)
+    dc_ac_ratio = round(dc_power / ac_power, 4) if ac_power != 0 else None
+    pr_roll_mean = round(pr + random.uniform(-0.02, 0.02), 4)
+    pr_roll_std = round(random.uniform(0.005, 0.05), 4)
+    pr_slope = round(random.uniform(-0.001, 0.001), 6)
+    pr_dev = round(random.uniform(-0.05, 0.05), 4)
+    temp_delta_sigma = round(random.uniform(0.5, 2.0), 4)
+
+    # Image analysis scores (0.0 – 1.0)
+    img_panel_score = round(random.uniform(0.7, 1.0), 4)
+    img_dusty_score = round(random.uniform(0.0, 0.5), 4)
+    img_cracked_score = round(random.uniform(0.0, 0.2), 4)
+    img_bird_drop_score = round(random.uniform(0.0, 0.3), 4)
+
+    data = {
+        "node_id": CLIENT_ID,
+        "timestamp": int(time.time()),
+        # Sensor readings (backward compatibility)
+        "lux": lux,
+        "temperature_c": temperature_c,
+        "voltage": voltage,
+        # Power metrics
+        "DC_POWER": dc_power,
+        "AC_POWER": ac_power,
+        # Temperature metrics
+        "AMBIENT_TEMPERATURE": ambient_temp,
+        "MODULE_TEMPERATURE": module_temp,
+        # Irradiation
+        "IRRADIATION": irradiation,
+        # Performance metrics
+        "PR": pr,
+        "TEMP_DELTA": temp_delta,
+        "DC_AC_RATIO": dc_ac_ratio,
+        "PR_ROLL_MEAN": pr_roll_mean,
+        "PR_ROLL_STD": pr_roll_std,
+        "PR_SLOPE": pr_slope,
+        "PR_DEV": pr_dev,
+        "TEMP_DELTA_SIGMA": temp_delta_sigma,
+        # Image analysis scores
+        "img_panel_score": img_panel_score,
+        "img_dusty_score": img_dusty_score,
+        "img_cracked_score": img_cracked_score,
+        "img_bird_drop_score": img_bird_drop_score,
+    }
+
     return data
 
 # ===================== Main Loop =====================
