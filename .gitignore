@@ -6,3 +6,16 @@ RTU-MODEL/yolo.ipynb
 RTU-MODEL/yolo_pipeline.py
 RTU-MODEL/.runs
 RTU-MODEL/model_output/YOLO/.yolo26n.pt
+Master-Server/Fog-instance/cloud-package.zip
+Master-Server/Fog-instance/Live_Thing.zip
+Master-Server/Fog-instance/packages_to_be_installed.txt
+Master-Server/Fog-instance/requirements.txt
+Master-Server/Fog-instance/cloud-publisher/AmazonRootCA1.pem
+Master-Server/Fog-instance/cloud-publisher/ec2-Policy
+Master-Server/Fog-instance/cloud-publisher/ec2.cert.pem
+Master-Server/Fog-instance/cloud-publisher/ec2.private.key
+Master-Server/Fog-instance/cloud-publisher/ec2.public.key
+Master-Server/Fog-instance/cloud-publisher/pub.py
+Master-Server/Fog-instance/cloud-publisher/start.sh
+Master-Server/Fog-instance/Modelling-L2/commands-tokens-etc.txt
+Master-Server/Fog-instance/Modelling-L2/requirements.txt
